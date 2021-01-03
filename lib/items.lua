@@ -5,17 +5,17 @@ Recipe = class('Recipe')
 Recipes = {}
 
 local recipes = {
-  planks = { -- 4
-    "log"
+  oak_planks = { -- 4
+    "oak_log"
   },
   stick = { -- 2
-    "planks", nil, nil,
-    "planks"
+    "oak_planks", nil, nil,
+    "oak_planks"
   },
   chest = {
-    "planks", "planks", "planks",
-    "planks", nil     , "planks",
-    "planks", "planks", "planks"
+    "oak_planks", "oak_planks", "oak_planks",
+    "oak_planks", nil     , "oak_planks",
+    "oak_planks", "oak_planks", "oak_planks"
   },
   furnace = {
     "cobblestone", "cobblestone", "cobblestone",
@@ -31,7 +31,7 @@ local recipes = {
     "glass", "glass", "glass"
   },
   paper = { -- 3
-    "reeds", "reeds", "reeds"
+    "sugar_cane", "sugar_cane", "sugar_cane"
   },
   floppyDisk = {
     "redstone", nil, nil,
@@ -49,7 +49,7 @@ local recipes = {
   },
   turtle = {
     "iron_ingot", "iron_ingot", "iron_ingot",
-    "iron_ingot", "ComputerCraft:CC-Computer"  , "iron_ingot",
+    "iron_ingot", "computercraft:computer_normal"  , "iron_ingot",
     "iron_ingot", "chest"     , "iron_ingot"
   },
   diamondPick = {
@@ -58,8 +58,8 @@ local recipes = {
     nil      , "stick"
   },
   craftingTable = {
-    "planks", "planks", nil,
-    "planks", "planks"
+    "oak_planks", "oak_planks", nil,
+    "oak_planks", "oak_planks"
   },
   bucket = {
     'iron_ingot', nil, 'iron_ingot',
@@ -73,9 +73,9 @@ local nameMap = {
   ['minecraft:crafting_table'] = 'Crafting Table',
   ['minecraft:coal'] = 'Coal',
   ['minecraft:dirt'] = 'Dirt',
-  ['minecraft:log'] = 'Wood',
-  ['minecraft:sapling'] = 'Saplings',
-  ['minecraft:reeds'] = 'Sugar Cane',
+  ['minecraft:oak_log'] = 'Wood',
+  ['minecraft:oak_sapling'] = 'Saplings',
+  ['minecraft:sugar_cane'] = 'Sugar Cane',
   ['minecraft:water_bucket'] = 'Water Bucket',
 }
 
